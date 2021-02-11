@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import ReactDOM from 'react-dom';
-import App from './4UseMatch'
+import { BrowserRouter as Router } from 'react-router-dom';
+import App from './2Parametrized'
 
 
 
@@ -9,7 +10,9 @@ import App from './4UseMatch'
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <Router>
+            <App />
+        </Router>
     </React.StrictMode>,
     document.getElementById('root')
 );

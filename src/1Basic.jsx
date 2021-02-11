@@ -34,7 +34,7 @@ const Info = () => {
 
 const App = () => {
     return (
-        <Router>
+        <div>
             <div>
                 <Link style={{ padding: "5px" }} to="/" >home</Link>
                 <Link style={{ padding: "5px" }} to="/contact" >contact</Link>
@@ -57,10 +57,9 @@ const App = () => {
                 <Route path="/">
                     <Home />
                 </Route>
-
             </Switch>
+        </div >
 
-        </Router>
     );
 }
 

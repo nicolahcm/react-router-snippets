@@ -38,9 +38,10 @@ const Note = ({ note }) => {
 
 const App = () => {
 
+    console.log(useRouteMatch())
 
     const match = useRouteMatch('/notes/:id')
-    console.log(match)
+    //console.log(match)
 
     const noteMatch = notes.find(note => note.id === parseInt(match.params.id))
 
@@ -67,9 +68,9 @@ const App = () => {
 
 const UseMatch = () => {
     return (
-        <Router>
-            <App />
-        </Router>
+
+        <App />
+
     );
 }
 

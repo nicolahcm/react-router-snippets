@@ -4,16 +4,12 @@ import {
     Switch, Route, Link, useHistory
 } from "react-router-dom"
 
-
 // here we use useHistory
 // we can push to another link: 
 // history.push('/contacts')
 
-
 // cit.: 
 // "The history.push method is invoked when you click on a <Link> component"
-
-
 
 // Notice that we didn't put any Link to="/contacts"
 const Info = () => {
@@ -34,7 +30,7 @@ const Contact = () => {
 
 const History = () => {
     return (
-        <Router>
+        <div>
             <div>
                 <Link to="/info">info</Link>
             </div>
@@ -50,7 +46,8 @@ const History = () => {
                 </Route>
 
             </Switch>
-        </Router>);
+        </div>
+    );
 }
 
 export default History;
